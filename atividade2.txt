@@ -1,0 +1,33 @@
+atividade 2
+
+import java.util.Scanner;
+public class Atividade2 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    while (true) {
+   
+    System.out.println("Digite nome de Usuario ");
+    String nomeDeUsuario = scanner.nextLine();
+
+    System.out.println("Digite a senha");
+    String senha = scanner.nextLine();
+
+      if (nomeDeUsuario.equals(senha)) {
+
+    System.out.println("Erro: A senha não pode ser igual ao nome de usuário");
+      }
+  
+     else {
+    System.out.println("Cadastro realizado com sucesso");
+    break;
+       
+      }
+      
+
+
+    } 
+
+
+    }
+    }
