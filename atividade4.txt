@@ -1,0 +1,26 @@
+
+
+public class Atividade4 {
+  public static void main(String[] args) {
+
+ double paisA = 80000;
+    double paisB = 200000;
+    int anos = 0;
+    double taxaA = 0.03;
+    double taxaB = 0.015;
+
+    do {
+      paisA += paisA * taxaA;
+      paisB += paisB * taxaB;
+      anos++; }
+
+      while (paisA < paisB);
+
+     System.out.println("A população do país A ultrapassa ou iguala populaçao pais B em " + anos + " anos.");
+      
+
+
+      
+  } 
+
+      
