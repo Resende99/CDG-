@@ -1,0 +1,72 @@
+
+
+      
+
+
+import java.util.Scanner;
+public class Atividade5 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    double paisA;
+    double paisB;
+    int anos = 0;
+    double taxaA;
+    double taxaB;
+
+    do {
+      System.out.println("Digite o número de habitantes do país A: ");
+      paisA = scanner.nextDouble();
+      if (paisA < 0);
+
+    }
+      while (paisA < 0);
+
+
+      do {
+      System.out.println("Digite o número de habitantes do país B: ");
+      paisB = scanner.nextDouble();
+      if (paisB < 0);
+
+      }
+    while (paisB < 0);
+
+
+
+
+   do {
+      System.out.println("Digite a taxa de crescimento do país A: ");
+      taxaA = scanner.nextDouble();
+      if ( taxaA < 0);
+
+   }
+     while ( taxaA< 0);
+
+
+    do {
+      System.out.println("Digite a taxa de crescimento do país B: ");
+      taxaB = scanner.nextDouble();
+      if (taxaB  < 0);
+
+    }
+
+   while (taxaB  < 0);
+
+    do {
+      paisA = taxaA;
+      paisB= taxaB;
+      anos++;
+
+     System.out.println( "A populaçao do pais A ultrapassou ou iguala a do pais B em " + anos + " anos");
+    }
+
+   while (paisA < paisB);
+
+
+
+
+
+  } 
+
+
+
+}
