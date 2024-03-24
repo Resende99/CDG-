@@ -1,0 +1,13 @@
+
+
+
+public class Atividade29 {
+  public static void main(String[] args) {
+      System.out.println("Lojas Quase Dois - Tabela de preços");
+      for (int a = 1; a <= 50; a++) {
+          double preco = a * 1.99;
+          System.out.println( a+ " - R$ " + String.format("%.2f", preco));
+      }
+  }
+}
+

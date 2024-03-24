@@ -1,0 +1,30 @@
+
+
+
+public class Atividade24 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Quantas notas você deseja inserir? ");
+        int N = scanner.nextInt();
+
+        if (N <= 0) {
+            System.out.println("Número inválido de notas.");
+            return;
+        }
+
+        double soma = 0;
+
+        for (int a = 1; a <= N; a++) {
+            System.out.print("Digite a nota " + a + ": ");
+            double nota = scanner.nextDouble();
+
+            soma += nota;
+        }
+
+        double media = soma / N;
+
+        System.out.println("A média aritmética das " + N + " notas é: " + media);
+    }
+}
+

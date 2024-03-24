@@ -1,0 +1,21 @@
+11
+import java.util.Scanner;
+public class Atividade11 {
+  public static void main(String[] args) {
+   Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Numero 1");
+    int numero1 = entrada.nextInt();
+    System.out.println("Numero 2");
+    int numero2 = entrada.nextInt();
+    int soma =0;
+    for(int a=numero1+1;a<numero2;a++){
+        System.out.println(a);
+    soma += a;
+
+
+      }
+      System.out.println("A soma dos numeros entre "+numero1+" e "+numero2+" é: "+soma);
+      entrada.close();
+     }
+    }

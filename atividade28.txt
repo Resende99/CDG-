@@ -1,0 +1,45 @@
+
+
+import java.util.Scanner;
+
+public class Atividade27 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+import java.util.Scanner;
+
+public class Atividade28 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Quantos CDs na coleção? ");
+        int quantidadeCDs = scanner.nextInt();
+
+        if (quantidadeCDs <= 0) {
+            System.out.println("Número inválido de CDs.");
+            return;
+        }
+
+        double totalInvestido = 0;
+
+        for (int a = 1; a <= quantidadeCDs; a++) {
+            System.out.print("Digite o valor do CD " + a + ": R$ ");
+            double valorCD = scanner.nextDouble();
+
+            if (valorCD <= 0) {
+                System.out.println("Valor inválido para o CD " + a + ".");
+                return;
+            }
+
+            totalInvestido += valorCD;
+        }
+
+        double valorMedioPorCD = totalInvestido / quantidadeCDs;
+
+        System.out.println("Valor total investido na coleção: R$ " + totalInvestido);
+        System.out.println("Valor médio gasto em cada CD: R$ " + valorMedioPorCD);
+    }
+}
+
+

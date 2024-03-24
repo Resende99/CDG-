@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+public class atividade 8 {
+    public static void main(String[] args) {
+Scanner entrada = new Scanner(System.in);
+int soma = 0;
+double media = soma/5;
+
+
+      
+for (int a=0; a<5 ;a++){
+System.out.println("Digite o valor do "+ (a+1) + "º numero: ");
+int numero = entrada.nextInt();
+soma += numero;
+
+}
+
+System.out.println("Soma:"+ soma);
+System.err.println("Media:"+media);
+
+        entrada.close();
+    }
+}

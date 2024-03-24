@@ -1,0 +1,21 @@
+
+
+import java.util.Scanner;
+public class atividade12 {
+  public static void main(String[] args) {
+   Scanner entrada = new Scanner(System.in);
+    
+    int numero;
+    int tabuada;
+    int a;
+        System.out.println("Digite seu numero: ");
+         numero = entrada.nextInt(); 
+         entrada.close();
+         System.out.println("Tabuada de "+numero+":"); 
+    for(a=1;a<=10;a++){
+    tabuada = numero*a;
+    System.out.println(numero+" x "+a+" = "+tabuada);
+    }
+
+        }
+    }
