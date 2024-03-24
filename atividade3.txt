@@ -1,0 +1,95 @@
+
+Atividade 3
+import java.util.Scanner;
+public class Atividade3 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int idade;
+    double Salario;
+    String Sexo; 
+    String EstadoCivil;  
+
+
+
+
+     while (true) {
+
+    System.out.println("Nome maior que 3 caracteristicas");
+      String nome = scanner.nextLine();
+      if (nome.length() <= 3) {
+     System.out.println("Erro,nome deve ter mais que 3 caracteristicas");
+
+
+        break;
+
+      }
+      else if (nome.length() >= 3){
+        System.out.println("Nome aceito");
+      }
+     }
+
+
+     do {
+     System.out.print ("Digite a Idade:");
+  while (!scanner.hasNextInt()) {
+    System.out.println("Erro, Idade deve ser um numero");
+    System.out.print("Digite a Idade:");
+
+
+  }
+  idade = scanner.nextInt();
+  if (idade < 0 || idade > 150) {
+    System.out.println("Erro, Idade deve ser entre 0 e 150");
+  }
+
+
+
+
+     } while (idade < 0 || idade > 150);
+    System.out.println("A idade e Valida");
+
+
+    do {
+         System.out.print ("Digite o Salario:");
+      while (!scanner.hasNextDouble()) {
+        System.out.println("Erro, Salario deve ser um numero");
+        System.out.print("Digite o Salario:");
+
+
+      }
+      Salario = scanner.nextDouble();
+      if (Salario < 0) {
+        System.out.println("Erro, Salario deve ser maior que 0");
+      }
+      } while (Salario < 0);
+      System.out.println("O Salario e Valido");
+
+
+
+
+    
+    
+    System.out.println("Sexo: ");
+    
+    do{
+      Sexo = scanner.next();
+        if (!Sexo.equalsIgnoreCase("F") & !Sexo.equalsIgnoreCase("M")){
+        System.out.println("Invalido, digite F para Feminino e M para Masculino");
+        }
+    }
+      while (!Sexo.equalsIgnoreCase("F") & !Sexo.equalsIgnoreCase("M"));
+
+
+    
+   do {
+    System.out.println("Estado Civil: ");
+    EstadoCivil = scanner.next();
+    if (!EstadoCivil.equalsIgnoreCase("S") & !EstadoCivil.equalsIgnoreCase("C") & !EstadoCivil.equalsIgnoreCase("V") & !EstadoCivil.equalsIgnoreCase("D")) {
+      System.out.println("Invalido, digite S para Solteiro, C para Casado, V para Viúvo e D para Divorciado");
+    }}
+ 
+   while (!EstadoCivil.equalsIgnoreCase("S") & !EstadoCivil.equalsIgnoreCase("C") & !EstadoCivil.equalsIgnoreCase("V") & !EstadoCivil.equalsIgnoreCase("D"));  
+  } 
+
+      
+}    
