@@ -1,0 +1,52 @@
+
+
+public class app {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello, World!");
+
+        // Criando objetos Aluno
+        Aluno aluno1 = new Aluno("João", "123456", 25, 30, 35);
+        Aluno aluno2 = new Aluno("Maria", "654321", 20, 30, 40);
+
+        // Exibindo informações dos alunos
+        aluno1.exibirInformacoes();
+        aluno2.exibirInformacoes();
+    }
+}
+
+
+
+
+
+
+class Aluno {
+    String nome;
+    String ra;
+    int nota1;
+    int nota2;
+    int nota3;
+
+    
+    public Aluno(String nome, String ra, int nota1, int nota2, int nota3) {
+        this.nome = nome;
+        this.ra = ra;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
+        this.nota3 = nota3;
+    }
+
+    
+    public int calcularTotalNotas() {
+        return nota1 + nota2 + nota3;
+    }
+
+    
+    public void exibirInformacoes() {
+        System.out.println("Aluno: " + nome);
+        System.out.println("RA: " + ra);
+        System.out.println("Nota 1: " + nota1);
+        System.out.println("Nota 2: " + nota2);
+        System.out.println("Nota 3: " + nota3);
+        System.out.println("Total de notas: " + calcularTotalNotas());
+    }
+}
