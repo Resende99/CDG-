@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import javax.management.ValueExp;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String login;
+        int senha;
+
+        System.out.println("Digite seu login: ");
+        login = scanner.nextLine();
+        System.out.println("Digite sua senha: ");
+        senha = scanner.nextInt();
+
+        try {
+            FileWriter writer = new FileWriter("login.txt");
+            writer.write(login + "\n");
+            writer.write(senha + "\n");  
+            writer.close();  
+          
+            if (String.valueOf(senha).length() < 5) {
+                System.out.println("A senha deve ter pelo menos 5 caracteres.");
+
+             if (login.length() < 5)
+                System.out.println("O Login deve ter pelo menos 5 caracteres.");
+
+
+              
+            } else {
+                FileWriter arquivo = new FileWriter("arquivo.txt");
+                arquivo.write(login + "\n");
+                arquivo.write(String.valueOf(senha));
+
+                arquivo.close();
+                System.out.println("Login e senha gravados com sucesso.");
+            }
+        } catch (IOException e) {
+            System.out.println("Ocorreu um erro ao gravar o arquivo: " + e.getMessage());
+        } finally {
+            scanner.close();
+        }
+    }
+}
