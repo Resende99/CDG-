@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    try {
+     
+     System.out.println("Digite o dividendo (número a ser dividido):");
+       int dividendo = scanner.nextInt();
+System.out.println("Digite o divisor (número pelo qual dividir):");
+ int divisor = scanner.nextInt();
+
+if (divisor == 0) {
+ throw new ArithmeticException("Divisão por zero não é permitida.");
+      }
+
+double resultado = divisor;
+   System.out.println("Resultado da divisão: " + resultado);
+ } catch (ArithmeticException e) {
+      System.out.println("Erro ao dividir: " + e.getMessage());
+} catch (Exception e) {
+  System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+    
+       } finally {
+      scanner.close();
+    }
+  }
